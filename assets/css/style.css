@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+:root{
+    --grey-color: #ccc9c9;
+    --white-color: #ffffff;
+    --orange-color: #e96f32;
+}
+
+*{
+    font-family: 'Inter', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.logo{
+    height: auto;
+    width: 5vw;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header a {
+    color: var(--grey-color);
+    text-decoration: none;
+    margin-left: 1.5rem;
+}
+
+.info-principal-header{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.entrar, .acessar{
+    margin-left: 1rem;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 12px;
+
+}
+
+.entrar{
+    color: var(--white-color);
+    background-color: var(--orange-color);
+    transition: 200ms ease-in-out;
+}
+
+.entrar:hover{
+    background-color: #a2542d;
+}
+
+.acessar{
+    background-color: var(--white-color);
+    color: var(--orange-color);
+    border: 2px solid var(--orange-color);  
+}
+
+@media (max-width: 1000px) {
+    .entrar, .acessar{
+        display: none;
+    }
+}
+
+/*Main*/
+
+.home{
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column  ;
+    align-items: center;
+    justify-content: center;
+}
+
+.subtitulo{
+    margin: 1rem 0 1rem 0;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.titulo{
+    margin: 1rem 0 1rem 0;
+    text-align: center;
+    max-width: 840px;
+    font-size: 3.4rem;
+    font-weight: 800;
+}
+
+.texto{
+    margin: 1rem 0 1rem 0;
+    text-align: center;
+    max-width: 840px;
+    font-weight: 400;
+}
+
+.link{
+    cursor: pointer;
+    margin: 1rem 0 1rem 0;
+    color: var(--orange-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.link:hover{
+    color: #a2542d;
+    font-weight: 500;
+}
+
+.celular{
+    margin: 1rem 0 1rem 0;
+    margin-top: 5rem;
+    width: 57vw;
+    margin-bottom: 5rem;
+}
+
+/*contas*/
+
+.contas{
+    margin-top: 5vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10rem;
+}
+
+.digital, .juridica{
+    max-width: 505px;
+}
+
+.qrcode{
+    margin: 0;
+    max-width: 500px;
+    padding: 2rem 0 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.qrcode p{
+    max-width: 300px;
+    text-align: start;
+}
+
+@media (max-width: 1100px) {
+    .contas{
+        flex-direction: column;
+    }
+}
+
+.footer{
+    height: 10vh;
+    color: var(--orange-color);
+    background-color: var(--grey-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
